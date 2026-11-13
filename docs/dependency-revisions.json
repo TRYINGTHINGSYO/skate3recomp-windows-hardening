@@ -1,0 +1,110 @@
+[
+  {
+    "path": ".",
+    "commit": "550bc235cd891cfeabf2d0b814822cad511d3c42"
+  },
+  {
+    "path": "third_party/rexglue-sdk",
+    "commit": "2d51b952e84e05017759bc2a846696f00ec7b996"
+  },
+  {
+    "path": "third_party/rexglue-sdk/thirdparty/FFmpeg",
+    "commit": "0604b464c7cb4ebc94940cf1f324a3b26b87717c"
+  },
+  {
+    "path": "third_party/rexglue-sdk/thirdparty/catch2",
+    "commit": "88abf9bf325c798c33f54f6b9220ef885b267f4f"
+  },
+  {
+    "path": "third_party/rexglue-sdk/thirdparty/cli11",
+    "commit": "bfffd37e1f804ca4fae1caae106935791696b6a9"
+  },
+  {
+    "path": "third_party/rexglue-sdk/thirdparty/fmt",
+    "commit": "407c905e45ad75fc29bf0f9bb7c5c2fd3475976f"
+  },
+  {
+    "path": "third_party/rexglue-sdk/thirdparty/glslang",
+    "commit": "f4f1d8a352ca1908943aea2ad8c54b39b4879080"
+  },
+  {
+    "path": "third_party/rexglue-sdk/thirdparty/imgui",
+    "commit": "d94d0f3649c99d9a026518214f796aaacde707fe"
+  },
+  {
+    "path": "third_party/rexglue-sdk/thirdparty/inja",
+    "commit": "7d1b4600b68595085a949743331c2e5673f511ea"
+  },
+  {
+    "path": "third_party/rexglue-sdk/thirdparty/libmspack",
+    "commit": "305907723a4e7ab2018e58040059ffb5e77db837"
+  },
+  {
+    "path": "third_party/rexglue-sdk/thirdparty/o1heap",
+    "commit": "388a73fd9007300e5130c5fe352d9ce3288b6dde"
+  },
+  {
+    "path": "third_party/rexglue-sdk/thirdparty/sdl3",
+    "commit": "8bf3b7215ad9fc3deb583c6a3a37c6c67f2e24e4"
+  },
+  {
+    "path": "third_party/rexglue-sdk/thirdparty/simde",
+    "commit": "71fd833d9666141edcd1d3c109a80e228303d8d7"
+  },
+  {
+    "path": "third_party/rexglue-sdk/thirdparty/simde/test/munit",
+    "commit": "da8f73412998e4f1adf1100dc187533a51af77fd"
+  },
+  {
+    "path": "third_party/rexglue-sdk/thirdparty/snappy",
+    "commit": "6af9287fbdb913f0794d0148c6aa43b58e63c8e3"
+  },
+  {
+    "path": "third_party/rexglue-sdk/thirdparty/snappy/third_party/benchmark",
+    "commit": "d572f4777349d43653b21d6c2fc63020ab326db2"
+  },
+  {
+    "path": "third_party/rexglue-sdk/thirdparty/snappy/third_party/googletest",
+    "commit": "b796f7d44681514f58a683a3a71ff17c94edb0c1"
+  },
+  {
+    "path": "third_party/rexglue-sdk/thirdparty/spdlog",
+    "commit": "79524ddd08a4ec981b7fea76afd08ee05f83755d"
+  },
+  {
+    "path": "third_party/rexglue-sdk/thirdparty/spirv-headers",
+    "commit": "04f10f650d514df88b76d25e83db360142c7b174"
+  },
+  {
+    "path": "third_party/rexglue-sdk/thirdparty/spirv-tools",
+    "commit": "04d0b166dcd62e29509bf2aac3ca0c5ccdcb6929"
+  },
+  {
+    "path": "third_party/rexglue-sdk/thirdparty/tomlplusplus",
+    "commit": "30172438cee64926dc41fdd9c11fb3ba5b2ba9de"
+  },
+  {
+    "path": "third_party/rexglue-sdk/thirdparty/tracy",
+    "commit": "05cceee0df3b8d7c6fa87e9638af311dbabc63cb"
+  },
+  {
+    "path": "third_party/rexglue-sdk/thirdparty/utfcpp",
+    "commit": "63d64de49fd6b829f7c8694df5ab2ee625cb7134"
+  },
+  {
+    "path": "third_party/rexglue-sdk/thirdparty/volk",
+    "commit": "0b17a763ba5643e32da1b2152f8140461b3b7345"
+  },
+  {
+    "path": "third_party/rexglue-sdk/thirdparty/vulkan-headers",
+    "commit": "49f1a381e2aec33ef32adf4a377b5a39ec016ec4"
+  },
+  {
+    "path": "third_party/rexglue-sdk/thirdparty/vulkan-memory-allocator",
+    "commit": "1d8f600fd424278486eade7ed3e877c99f0846b1"
+  },
+  {
+    "path": "third_party/rexglue-sdk/thirdparty/xxHash",
+    "commit": "e626a72bc2321cd320e953a0ccf1584cad60f363"
+  }
+]

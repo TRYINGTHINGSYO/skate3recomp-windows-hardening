@@ -1,0 +1,42 @@
+diff --git a/src/kernel/xam/xam_ui.cpp b/src/kernel/xam/xam_ui.cpp
+index f08e31e..6bf4454 100644
+--- a/src/kernel/xam/xam_ui.cpp
++++ b/src/kernel/xam/xam_ui.cpp
+@@ -20,6 +20,9 @@
+ 
+ REXCVAR_DEFINE_BOOL(headless, false, "Kernel",
+                     "Don't display any UI, using defaults for prompts as needed");
++REXCVAR_DEFINE_STRING(headless_keyboard_text, "", "Kernel",
++                      "Optional ASCII alphanumeric response for headless keyboard prompts; "
++                      "empty preserves the game default. Diagnostic use only.");
+ #include <rex/kernel/xam/private.h>
+ #include <rex/hook.h>
+ #include <rex/types.h>
+@@ -441,7 +444,26 @@ u32 XamShowKeyboardUI_entry(u32 user_index, u32 flags, mapped_wstring default_te
+ 
+   X_RESULT result;
+   if (REXCVAR_GET(headless)) {
+-    auto run = [default_text, buffer, buffer_length, buffer_size]() -> X_RESULT {
++    const std::string text_override = REXCVAR_GET(headless_keyboard_text);
++    auto run = [default_text, buffer, buffer_length, buffer_size,
++                text_override]() -> X_RESULT {
++      if (!text_override.empty()) {
++        // Opt-in diagnostic fallback for an unavailable system keyboard dialog.
++        // Preserve the original default-text path unless explicitly requested.
++        if (buffer_length == 0 || text_override.size() >= buffer_length) {
++          return X_ERROR_INVALID_PARAMETER;
++        }
++        for (const char c : text_override) {
++          if (!((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') ||
++                (c >= '0' && c <= '9'))) {
++            return X_ERROR_INVALID_PARAMETER;
++          }
++        }
++        rex::string::util_copy_and_swap_truncating(
++            buffer, rex::string::to_utf16(text_override), buffer_length);
++        REXKRNL_INFO("Headless keyboard: supplied explicit diagnostic response");
++        return X_ERROR_SUCCESS;
++      }
+       // Redirect default_text back into the buffer.
+       if (!default_text) {
+         std::memset(buffer, 0, buffer_size);
