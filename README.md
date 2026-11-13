@@ -1,5 +1,17 @@
 # Skate 3 Recomp: Windows hardening and keyboard fallback
 
+## Fork attribution
+
+These patches are derived from an independently modified fork of
+[mchughalex/skate3recomp](https://github.com/mchughalex/skate3recomp), based on
+v2.0.2. The runtime changes derive from
+[mchughalex/rexglue-skate3](https://github.com/mchughalex/rexglue-skate3).
+Original development credit belongs to the upstream authors and contributors.
+
+This repository publishes the fork's patches and documentation. It is a
+separately hosted patch collection; GitHub does not currently mark it as a
+network fork. It is unofficial and is not endorsed by the upstream projects.
+
 Reviewable source patches for Skate 3 Recomp v2.0.2. This package removes
 executable icon self-modification and the hidden PowerShell cleanup process.
 It also records the dependency workaround used to build this revision and an
